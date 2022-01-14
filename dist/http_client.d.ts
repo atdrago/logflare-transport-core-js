@@ -1,3 +1,5 @@
+/// <reference types="node" />
+import stream from "stream";
 interface IngestTransformsI {
     numbersToFloats: boolean;
 }
@@ -18,6 +20,7 @@ declare class LogflareHttpClient {
     protected readonly apiBaseUrl: string;
     constructor(options: LogflareUserOptionsI);
     addLogEvent(logEvent: object | object[]): Promise<object>;
+    insertStream(): stream.Writable;
     postLogEvents(batch: object[]): Promise<any>;
     addTypecasting(): Promise<void>;
 }
