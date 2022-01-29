@@ -6,7 +6,10 @@
     "logflare",
     "logging"
   ],
-  "main": "dist/main.js",
+  "exports": {
+    ".": "./dist/main.js",
+    "./http-stream-client": "./dist/http_stream_client.js"
+  },
   "license": "MIT",
   "dependencies": {
     "big-integer": "^1.6.48",
