@@ -115,6 +115,7 @@ var LogflareHttpClient = /** @class */ (function () {
                                 body: JSON.stringify(payload),
                                 method: "POST",
                                 headers: {
+                                    Accept: "application/json, text/plain, */*",
                                     "Content-Type": "application/json",
                                 },
                             })];
@@ -153,6 +154,7 @@ var LogflareHttpClient = /** @class */ (function () {
                         return [4 /*yield*/, fetch(url.toString(), {
                                 method: "POST",
                                 headers: {
+                                    Accept: "application/json, text/plain, */*",
                                     "Content-Type": "application/json",
                                 },
                             })];

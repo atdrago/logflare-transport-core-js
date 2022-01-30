@@ -6,14 +6,15 @@
         "logflare",
         "logging"
     ],
-    "main": "dist/main.js",
+    "exports": {
+        ".": "./dist/main.js",
+        "./http-stream-client": "./dist/http_stream_client.js"
+    },
     "license": "MIT",
     "dependencies": {
-        "@types/lodash": "^4.14.153",
         "big-integer": "^1.6.48",
         "bignumber.js": "^9.0.0",
-        "decimal.js": "^10.2.0",
-        "lodash": "^4.17.15"
+        "decimal.js": "^10.2.0"
     },
     "devDependencies": {
         "@babel/core": "^7.10.0",
@@ -33,10 +34,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/atdrago/logflare-transport-core-js.git"
+        "url": "git+https://github.com/logflare/logflare-transport-core-js.git"
     },
     "bugs": {
-        "url": "https://github.com/atdrago/logflare-transport-core-js/issues"
+        "url": "https://github.com/Logflare/logflare-transport-core-js/issues"
     },
     "types": "dist/main.d.ts",
     "jest": {
