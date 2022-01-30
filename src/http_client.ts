@@ -73,6 +73,7 @@ class LogflareHttpClient {
                 body: JSON.stringify(payload),
                 method: "POST",
                 headers: {
+                    Accept: "application/json, text/plain, */*",
                     "Content-Type": "application/json",
                 },
             })
@@ -111,6 +112,7 @@ class LogflareHttpClient {
         await fetch(url.toString(), {
             method: "POST",
             headers: {
+                Accept: "application/json, text/plain, */*",
                 "Content-Type": "application/json",
             },
         })
