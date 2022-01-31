@@ -1,7 +1,7 @@
 {
     "name": "@atdrago/logflare-transport-core",
     "sideEffects": false,
-    "version": "0.2.11",
+    "version": "0.2.12",
     "description": "A common core for Logflare javascript transports.",
     "keywords": [
         "logflare",
